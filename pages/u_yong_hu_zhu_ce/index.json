@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/container/index",
+  "b": "/materials/gsd-h5-react/components/wd-form/index",
+  "c": "/materials/gsd-h5-react/components/wd-text/index",
+  "d": "/materials/gsd-h5-react/components/wd-input/index",
+  "e": "/materials/gsd-h5-react/components/wd-button/index",
+  "f": "/materials/gsd-h5-react/components/wd-radio-list/index",
+  "g": "/materials/gsd-h5-react/components/wd-modal/index",
+  "h": "/materials/gsd-h5-react/components/wd-icon/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"用户注册","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

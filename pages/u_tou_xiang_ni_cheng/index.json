@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/container/index",
+  "b": "/materials/gsd-h5-react/components/wd-upload-image/index",
+  "c": "/materials/gsd-h5-react/components/wd-input/index",
+  "d": "/materials/gsd-h5-react/components/wd-button/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"头像昵称","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

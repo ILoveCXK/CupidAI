@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/container/index",
+  "b": "/materials/gsd-h5-react/components/wd-image/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"性别","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

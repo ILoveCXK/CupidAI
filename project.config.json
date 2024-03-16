@@ -1,0 +1,60 @@
+{
+  "packOptions": {
+    "ignore": [
+      {
+        "value": "materials/gsd-h5-react/meta.json",
+        "type": "file"
+      }
+    ],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "codeProtect": false,
+    "compileHotReLoad": true,
+    "ignoreDevUnusedFiles": false,
+    "useCompilerPlugins": [
+      "typescript"
+    ],
+    "bigPackageSizeSupport": true,
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "package.json",
+        "miniprogramNpmDistDir": "./"
+      },
+      {
+        "packageJsonPath": "packages/$wd_system/package.json",
+        "miniprogramNpmDistDir": "packages/$wd_system"
+      }
+    ],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.29.2",
+  "appid": "wxa3af20bd775354d5",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "projectname": "CupidAI",
+  "appId": "wxa3af20bd775354d5",
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

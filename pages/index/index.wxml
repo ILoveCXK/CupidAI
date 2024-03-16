@@ -1,0 +1,23 @@
+<page-meta page-style="{{pageStyle}}">
+	<view id="wd-page-root" wx:if="{{weDaHasLogin && !_expiredMessage}}" data-weui-theme="light">
+		<a id="scrollView1" style="{{scrollView1.style}}" className="{{scrollView1.className}}" bounces="{{scrollView1.bounces}}" enableBackToTop="{{scrollView1.enableBackToTop}}" enableFlex="{{scrollView1.enableFlex}}" enhanced="{{scrollView1.enhanced}}" fastDeceleration="{{scrollView1.fastDeceleration}}" lowerThreshold="{{scrollView1.lowerThreshold}}" pagingEnabled="{{scrollView1.pagingEnabled}}" refresherBackground="{{scrollView1.refresherBackground}}" refresherDefaultStyle="{{scrollView1.refresherDefaultStyle}}" refresherEnabled="{{scrollView1.refresherEnabled}}" refresherThreshold="{{scrollView1.refresherThreshold}}" refresherTriggered="{{scrollView1.refresherTriggered}}" scrollAnchoring="{{scrollView1.scrollAnchoring}}" scrollTop="{{scrollView1.scrollTop}}" scrollWithAnimation="{{scrollView1.scrollWithAnimation}}" scrollX="{{scrollView1.scrollX}}" scrollY="{{scrollView1.scrollY}}" showScrollbar="{{scrollView1.showScrollbar}}" upperThreshold="{{scrollView1.upperThreshold}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<block id="{{'repeater1_item'+ '-' + irepeater1_item}}" wx:for="{{repeater1_item}}" wx:for-index="irepeater1_item" wx:key="$$i">
+				<b id="{{'container3'+ '-' + irepeater1_item}}" style="{{container3[irepeater1_item].style}}" className="{{container3[irepeater1_item].className}}" data="{{container3[irepeater1_item].data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<b id="{{'container4'+ '-' + irepeater1_item}}" style="{{container4[irepeater1_item].style}}" className="{{container4[irepeater1_item].className}}" data="{{container4[irepeater1_item].data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+						<c id="{{'text1'+ '-' + irepeater1_item}}" style="{{text1[irepeater1_item].style}}" className="{{text1[irepeater1_item].className}}" maxLines="{{text1[irepeater1_item].maxLines}}" text="{{text1[irepeater1_item].text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text1[irepeater1_item].text}}</c>
+						<d id="{{'image1'+ '-' + irepeater1_item}}" style="{{image1[irepeater1_item].style}}" className="{{image1[irepeater1_item].className}}" alt="{{image1[irepeater1_item].alt}}" fit="{{image1[irepeater1_item].fit}}" src="{{image1[irepeater1_item].src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					</b>
+					<b id="{{'container2'+ '-' + irepeater1_item}}" style="{{container2[irepeater1_item].style}}" className="{{container2[irepeater1_item].className}}" data="{{container2[irepeater1_item].data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+						<d id="{{'image2'+ '-' + irepeater1_item}}" style="{{image2[irepeater1_item].style}}" className="{{image2[irepeater1_item].className}}" alt="{{image2[irepeater1_item].alt}}" fit="{{image2[irepeater1_item].fit}}" src="{{image2[irepeater1_item].src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+						<c id="{{'text2'+ '-' + irepeater1_item}}" style="{{text2[irepeater1_item].style}}" className="{{text2[irepeater1_item].className}}" maxLines="{{text2[irepeater1_item].maxLines}}" text="{{text2[irepeater1_item].text}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{text2[irepeater1_item].text}}</c>
+					</b>
+				</b>
+			</block>
+		</a>
+		<b id="container1" style="{{container1.style}}" className="{{container1.className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<e id="textarea1" style="{{textarea1.style}}" className="{{textarea1.className}}" label="{{textarea1.label}}" name="{{textarea1.name}}" placeholder="{{textarea1.placeholder}}" requiredMsg="{{textarea1.requiredMsg}}" status="{{textarea1.status}}" value="{{textarea1.value}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:change="ontextarea1$change"/>
+			<f id="button1" style="{{button1.style}}" className="{{button1.className}}" icon="{{button1.icon}}" text="{{button1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</f>
+		</b>
+	</view>
+	<wd-info wx:if="{{weDaHasLogin === false && !_expiredMessage}}" message="无权限访问" type="auth" enableCustom="true" pageUUID="index" error="{{loginError}}"/>
+</page-meta>

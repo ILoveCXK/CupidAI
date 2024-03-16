@@ -1,0 +1,23 @@
+{
+  "useExtendedLib": {
+    "weui": true
+  },
+  "pages": [
+    "pages/u81h26k2dho/index",
+    "pages/index/index",
+    "pages/u_shang_chuan_zhao_pi/index",
+    "pages/u_suo_zai_da_xue/index",
+    "pages/u_tou_xiang_ni_cheng/index",
+    "pages/u_xing_bie/index",
+    "pages/u_yong_hu_zhu_ce/index"
+  ],
+  "subpackages": [
+    {
+      "root": "packages/$wd_system",
+      "name": "wd-sys-module",
+      "pages": [
+        "pages/login/index"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/scrollView/index",
+  "b": "/materials/gsd-h5-react/components/container/index",
+  "c": "/materials/gsd-h5-react/components/wd-text/index",
+  "d": "/materials/gsd-h5-react/components/wd-image/index",
+  "e": "/materials/gsd-h5-react/components/wd-textarea/index",
+  "f": "/materials/gsd-h5-react/components/wd-button/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"聊天页","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

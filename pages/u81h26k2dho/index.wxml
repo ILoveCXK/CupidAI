@@ -1,0 +1,40 @@
+<page-meta page-style="{{pageStyle}}">
+	<view id="wd-page-root" wx:if="{{weDaHasLogin && !_expiredMessage}}" data-weui-theme="light">
+		<a id="container1" style="{{container1.style}}" className="{{container1.className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container2" style="{{container2.style}}" className="{{container2.className}}" data="{{container2.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="image1" style="{{image1.style}}" className="{{image1.className}}" alt="{{image1.alt}}" fit="{{image1.fit}}" src="{{image1.src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			</a>
+			<a id="container3" style="{{container3.style}}" className="{{container3.className}}" data="{{container3.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<c id="input1" style="{{input1.style}}" className="{{input1.className}}" inputValue="{{input1.inputValue}}" label="{{input1.label}}" labelVisible="{{input1.labelVisible}}" name="{{input1.name}}" placeholder="{{input1.placeholder}}" prefixIcon="{{input1.prefixIcon}}" prefixType="{{input1.prefixType}}" requiredMsg="{{input1.requiredMsg}}" status="{{input1.status}}" suffixIcon="{{input1.suffixIcon}}" suffixType="{{input1.suffixType}}" template="{{input1.template}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+				<c id="input2" style="{{input2.style}}" className="{{input2.className}}" inputValue="{{input2.inputValue}}" label="{{input2.label}}" labelVisible="{{input2.labelVisible}}" name="{{input2.name}}" placeholder="{{input2.placeholder}}" prefixIcon="{{input2.prefixIcon}}" prefixType="{{input2.prefixType}}" requiredMsg="{{input2.requiredMsg}}" status="{{input2.status}}" suffixType="{{input2.suffixType}}" template="{{input2.template}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+				<a id="container4" style="{{container4.style}}" className="{{container4.className}}" data="{{container4.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<d id="button1" style="{{button1.style}}" className="{{button1.className}}" icon="{{button1.icon}}" text="{{button1.text}}" variant="{{button1.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton1$tap">{{button1.text}}</d>
+					<d id="button2" style="{{button2.style}}" className="{{button2.className}}" icon="{{button2.icon}}" text="{{button2.text}}" variant="{{button2.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__">{{button2.text}}</d>
+				</a>
+				<a id="container5" style="{{container5.style}}" className="{{container5.className}}" data="{{container5.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<d id="button3" style="{{button3.style}}" className="{{button3.className}}" block="{{button3.block}}" icon="{{button3.icon}}" text="{{button3.text}}" variant="{{button3.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton3$tap">{{button3.text}}</d>
+				</a>
+				<a id="container7" style="{{container7.style}}" className="{{container7.className}}" data="{{container7.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+					<e id="radio1" style="{{radio1.style}}" className="{{radio1.className}}" borderedH5="{{radio1.borderedH5}}" direction="{{radio1.direction}}" enumName="{{radio1.enumName}}" format="{{radio1.format}}" label="{{radio1.label}}" labelVisible="{{radio1.labelVisible}}" name="{{radio1.name}}" range="{{radio1.range}}" required="{{radio1.required}}" requiredFlag="{{radio1.requiredFlag}}" requiredMsg="{{radio1.requiredMsg}}" size="{{radio1.size}}" status="{{radio1.status}}" tipBlock="{{radio1.tipBlock}}" value="{{radio1.value}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+					<d id="button4" style="{{button4.style}}" className="{{button4.className}}" icon="{{button4.icon}}" text="{{button4.text}}" variant="{{button4.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton4$tap">{{button4.text}}</d>
+					<d id="button5" style="{{button5.style}}" className="{{button5.className}}" icon="{{button5.icon}}" text="{{button5.text}}" variant="{{button5.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton5$tap">{{button5.text}}</d>
+				</a>
+			</a>
+		</a>
+		<f id="modal1" style="{{modal1.style}}" className="{{modal1.className}}" closeType="{{modal1.closeType}}" defaultMaskShow="{{modal1.defaultMaskShow}}" defaultShow="{{modal1.defaultShow}}" position="{{modal1.position}}" template="{{modal1.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<g id="text1" style="{{text1.style}}" className="{{text1.className}}" level="{{text1.level}}" maxLines="{{text1.maxLines}}" text="{{text1.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" slot="headerSlot">{{text1.text}}</g>
+			<g id="text2" style="{{text2.style}}" className="{{text2.className}}" maxLines="{{text2.maxLines}}" text="{{text2.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" slot="contentSlot">{{text2.text}}</g>
+			<d id="button6" style="{{button6.style}}" className="{{button6.className}}" icon="{{button6.icon}}" text="{{button6.text}}" theme="{{button6.theme}}" variant="{{button6.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton6$tap" slot="footerSlot">{{button6.text}}</d>
+			<h id="icon1" style="{{icon1.style}}" className="{{icon1.className}}" name="{{icon1.name}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onicon1$tap" slot="headerSlot"/>
+			<d id="button7" style="{{button7.style}}" className="{{button7.className}}" icon="{{button7.icon}}" text="{{button7.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton7$tap" slot="footerSlot">{{button7.text}}</d>
+		</f>
+		<f id="modal2" style="{{modal2.style}}" className="{{modal2.className}}" closeType="{{modal2.closeType}}" defaultMaskShow="{{modal2.defaultMaskShow}}" defaultShow="{{modal2.defaultShow}}" position="{{modal2.position}}" template="{{modal2.template}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<g id="text3" style="{{text3.style}}" className="{{text3.className}}" level="{{text3.level}}" maxLines="{{text3.maxLines}}" text="{{text3.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" slot="headerSlot">{{text3.text}}</g>
+			<g id="text4" style="{{text4.style}}" className="{{text4.className}}" maxLines="{{text4.maxLines}}" text="{{text4.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" slot="contentSlot">{{text4.text}}</g>
+			<d id="button8" style="{{button8.style}}" className="{{button8.className}}" icon="{{button8.icon}}" text="{{button8.text}}" theme="{{button8.theme}}" variant="{{button8.variant}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton8$tap" slot="footerSlot">{{button8.text}}</d>
+			<h id="icon2" style="{{icon2.style}}" className="{{icon2.className}}" name="{{icon2.name}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onicon2$tap" slot="headerSlot"/>
+			<d id="button9" style="{{button9.style}}" className="{{button9.className}}" icon="{{button9.icon}}" text="{{button9.text}}" bind:attached="__mnt__" bind:detached="__unmnt__" bind:tap="onbutton9$tap" slot="footerSlot">{{button9.text}}</d>
+		</f>
+	</view>
+	<wd-info wx:if="{{weDaHasLogin === false && !_expiredMessage}}" message="无权限访问" type="auth" enableCustom="true" pageUUID="u81h26k2dho" error="{{loginError}}"/>
+</page-meta>

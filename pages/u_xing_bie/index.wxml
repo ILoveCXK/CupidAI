@@ -1,0 +1,13 @@
+<page-meta page-style="{{pageStyle}}">
+	<view id="wd-page-root" wx:if="{{weDaHasLogin && !_expiredMessage}}" data-weui-theme="light">
+		<a id="container1" style="{{container1.style}}" className="{{container1.className}}" data="{{container1.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+			<a id="container2" style="{{container2.style}}" className="{{container2.className}}" data="{{container2.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="image2" style="{{image2.style}}" className="{{image2.className}}" alt="{{image2.alt}}" fit="{{image2.fit}}" src="{{image2.src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			</a>
+			<a id="container3" style="{{container3.style}}" className="{{container3.className}}" data="{{container3.data}}" bind:attached="__mnt__" bind:detached="__unmnt__">
+				<b id="image1" style="{{image1.style}}" className="{{image1.className}}" alt="{{image1.alt}}" fit="{{image1.fit}}" src="{{image1.src}}" bind:attached="__mnt__" bind:detached="__unmnt__"/>
+			</a>
+		</a>
+	</view>
+	<wd-info wx:if="{{weDaHasLogin === false && !_expiredMessage}}" message="无权限访问" type="auth" enableCustom="true" pageUUID="u_xing_bie" error="{{loginError}}"/>
+</page-meta>

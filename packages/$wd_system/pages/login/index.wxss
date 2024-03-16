@@ -1,0 +1,60 @@
+button,
+button:hover,
+button,
+button:active  {
+  color: white;
+}
+
+.login-class .weda-ui .wedatea2td-input,
+.login-class .weda-ui .wedatea2td-button {
+  border: none;
+}
+
+.login-class .weda-ui .wedatea2td-input,
+.login-class .weda-ui .weda-input {
+  width: 100%;
+}
+
+.login-class .weda-ui .wedatea2td-btn {
+  border: none;
+  line-height: 1;
+}
+
+.login-class .weda-ui .wedatea2td-btn::after {
+  border: none;
+}
+
+.login-class .weda-ui .weui-cells:before,
+.login-class .weda-ui .weui-cells::after {
+  display: none;
+}
+
+.login-class .token-container .weda-button {
+  width: 11rem;
+  padding: 0.5rem;
+  color: #1e6fd8;
+}
+
+.login-class .token-container .weda-button::after {
+  border: none;
+}
+
+.login-class .token-container .weda-button[disabled] {
+  color: #d0d0d0;
+}
+
+.login-class .have-read .weui-cells {
+  font-size: 0.8rem;
+}
+
+.login-class .have-read .weui-cell {
+  padding: 0;
+}
+
+.login-class .have-read .weui-cells_checkbox .weui-cell__hd {
+  padding-right: 0.5rem;
+}
+
+.login-class .have-read .weui-cells_checkbox .weui-icon-checked {
+  width: 1.2rem;
+}

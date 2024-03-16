@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/grid/index",
+  "b": "/materials/gsd-h5-react/components/grid/row/index",
+  "c": "/materials/gsd-h5-react/components/grid/col/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"上传照片","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

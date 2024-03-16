@@ -1,0 +1,13 @@
+/** common.wxss **/
+page {
+  /* 修复小程序 Picker 组件滑动体验问题 */
+  touch-action: pan-y;
+  box-sizing: border-box;
+}
+
+page, page view, page element, page text, page image {
+  box-sizing: border-box;
+}
+
+/** import styles specified by material libs & lowcode styles if exist*/
+@import  'lowcode/style.wxss';

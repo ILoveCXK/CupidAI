@@ -1,0 +1,285 @@
+/* weda_list_view */
+
+.weda-list-view__container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 列表内容区域 */
+.weda-list-view__container .weda-list-view__content {
+  position: relative;
+  flex-grow: 2;
+}
+
+/* 加载中-列表为空的状态最小高度 */
+.weda-list-view__container .weda-list-view__content-blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 35px;
+}
+
+/* 加载中-给分页器最小的高度 */
+.weda-list-view__container.weda-list-view__container-loading
+  .weda-list-view__content-pagination.weda-list-view__content-init {
+  min-height: 35px;
+}
+
+/* 加载中-给触底加载最小高度 */
+.weda-list-view__container.weda-list-view__container-loading
+  .weda-list-view__more-bottomLoad {
+  min-height: 35px;
+}
+
+/* 卡片列表 */
+.weda-list-view-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 列表内容加载中 */
+.weda-list-view__container
+  .weda-list-view__more.weda-list-view__pagination-loading {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weda-list-view__container
+  .weda-list-view__more.weda-list-view__pagination-loading
+  .weda-list-view__more-symbol {
+  padding: 0;
+}
+
+/* 列表内容加载为空 */
+.weda-list-view__container .weda-list-view__empty {
+  width: 100%;
+  padding: 16px;
+}
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content {
+  color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content
+  .weda-list-view__empty__content__image {
+  width: 48px;
+  height: 48px;
+}
+
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content
+  .title {
+  padding: 10px 0 5px 0;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+}
+
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content
+  .code {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content
+  .detail {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 7px;
+}
+
+.weda-list-view__container
+  .weda-list-view__empty
+  .weda-list-view__empty__content
+  .arrow {
+  width: 6px;
+  height: 10px;
+}
+
+/* 加载更多 */
+.weda-list-view__container .weda-list-view__more {
+  width: 100%;
+  position: relative;
+}
+
+.weda-list-view__container .weda-list-view__more .weda-list-view__more-text {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.26);
+  text-align: center;
+  box-sizing: border-box;
+  height: 34px;
+}
+
+/* 触底加载 */
+.weda-list-view__container
+  .weda-list-view__more.weda-list-view__more-bottomLoad {
+  background: transparent;
+}
+
+.weda-list-view__bottom-load {
+  padding-top: 1px;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__bottom-load
+  .weda-list-view__more-symbol {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* 加载效果, height 固定成 37px */
+.weda-list-view__container .weda-list-view__more .weda-list-view__more-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  height: 37px;
+}
+
+.weda-list-view__container .weda-list-view__more .weda-list-view__symbol-item {
+  width: 8px;
+  height: 8px;
+  background: #c4c4c4;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__symbol-item:first-child {
+  width: 6px;
+  height: 6px;
+  margin-left: 0;
+}
+
+/* 加载更多 分页 */
+.weda-list-view__container .weda-list-view__more .weda-list-view__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 18px 12px 16px;
+  box-sizing: border-box;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-pre,
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-next {
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 24px;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-pre.active,
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-next.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-pre
+  .weda-list-view__pagination-icon,
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-next
+  .weda-list-view__pagination-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  opacity: 0.2;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .active.weda-list-view__pagination-pre
+  .weda-list-view__pagination-icon,
+.weda-list-view__container
+  .weda-list-view__more
+  .active.weda-list-view__pagination-next
+  .weda-list-view__pagination-icon {
+  opacity: 1;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-pre
+  .weda-list-view__pagination-icon {
+  left: 16px;
+  transform: rotate(180deg);
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-next
+  .weda-list-view__pagination-icon {
+  right: 18px;
+}
+
+.weda-list-view__container
+  .weda-list-view__more
+  .weda-list-view__pagination-text {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.split {
+  height: 20px;
+}
+
+/* 加载完成底部文字 */
+.weda-list-view__load-completed {
+  text-align: center;
+  padding: 5px 0;
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+  font-size: 12px;
+}
+.weda-list-view__error {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "lcap-app-WgFJWtGV",
+  "version": "1.0.8",
+  "scripts": {},
+  "dependencies": {
+		"@cloudbase/oauth": "0.1.1-alpha.5",
+    "@cloudbase/weda-client": "1.0.23",
+    "@cloudbase/weda-cloud-sdk": "1.0.57",
+    "mobx": "^5.15.4",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
+    "miniprogram-gesture": "^1.0.6",
+    "miniprogram-api-promise": "^1.0.4"
+  }
+}

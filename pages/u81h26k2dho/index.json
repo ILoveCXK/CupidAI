@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+  "a": "/materials/gsd-h5-react/components/container/index",
+  "b": "/materials/gsd-h5-react/components/wd-image/index",
+  "c": "/materials/gsd-h5-react/components/wd-input/index",
+  "d": "/materials/gsd-h5-react/components/wd-button/index",
+  "e": "/materials/gsd-h5-react/components/wd-radio-list/index",
+  "f": "/materials/gsd-h5-react/components/wd-modal/index",
+  "g": "/materials/gsd-h5-react/components/wd-text/index",
+  "h": "/materials/gsd-h5-react/components/wd-icon/index",
+  "wd-info": "/common/info/index"
+},
+"backgroundColor":"#FFFFFF","backgroundColorBottom":"#FFFFFF","backgroundColorTop":"#FFFFFF","backgroundTextStyle":"dark","navigationBarBackgroundColor":"#FFFFFF","navigationBarTextStyle":"black","navigationBarTitleText":"登录页","navigationStyle":"default","pageOrientation":"portrait","onReachBottomDistance":50
+}

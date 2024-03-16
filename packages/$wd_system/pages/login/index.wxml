@@ -1,0 +1,60 @@
+<page-meta page-style="{{pageStyle}}">
+  <view wx:if="{{!initing && !error}}"  id="wd-page-root" data-weui-theme="light">
+    <view id="id33" style="width:90%;margin:0px auto;display:flex;flex-direction:column;max-width:50rem;" class="login-class">
+      <view id="id44" style="margin:80px 0px;">
+        <image id="id15" style="margin:0px auto;display:flex;justify-content:center;width: 120px;height: 120px;" class="weda-ui weda-image" mode="aspectFit" src="{{settingData.logo}}" />
+      </view>
+      <view id="container1" wx:if="{{enablePassword}}">
+        <form bindsubmit="loginByPassword">
+          <login-input id="input1" name="username" placeholder="请输入用户名" type="text" />
+          <view id="container2" style="margin-bottom:30px;position:relative;">
+            <login-input id="input2" name="password" placeholder="请输入密码" type="{{passwordVisible?'text':'password'}}" />
+            <image id="image1" style="width:20PX;height:20PX;position:absolute;right:17px;top:20px;z-index: 9999;" class="weda-ui weda-image wd-event-tap" mode="widthFix" src="{{passwordVisible?'https://qcloudimg.tencent-cloud.cn/raw/487eba32ccfc23ebc68f8fac005d6919.svg':'https://qcloudimg.tencent-cloud.cn/raw/0b6cef53d62a3356e3bcc5bd83341482.svg'}}" bind:tap="togglePasswordVisible" />
+          </view>
+          <button id="button1" class="weda-ui weda-button weui-btn weui-btn_primary wd-event-tap" style="width:100%;border-radius:5px;" size="md" form-type="submit">
+            账号密码登录
+          </button>
+        </form>
+      </view>
+      <view id="id37" style="display:flex;flex-direction:column;">
+        <view id="id48" style="width:100%;margin-top:20px;position:relative;" wx:if="{{enableMpPhone}}">
+          <button style="width:100%;margin-top:0px;z-index:1;font-weight:normal;border-radius:0.5713rem;background:rgb(7, 193, 96);position:absolute;left:0px;top:0px;" bindgetphonenumber="getPhoneCodeNumber" aria-disabled="false" open-type="getPhoneNumber" role="button" class="weda-ui weda-button weui-btn weui-btn_primary weui-btn_wechat">登录</button>
+          <button id="id47" style="width:100%;margin-top:0px;z-index:1;font-weight:normal;border-radius:0.5713rem;background:rgb(7, 193, 96);position:absolute;left:0px;top:0px;" role="button" class="weda-ui weda-button weui-btn weui-btn_primary  wd-event-tap wd-event-tap" bind:tap="checkAgreement" wx:if="{{settingData.agreement.enable && !agreement}}">登录</button>
+        </view>
+      </view>
+      <view id="id11" style="display:flex;justify-content:center;flex-direction:row;font-size:0.8rem;position:fixed;left:0px;right:0px;bottom:50px;" class="have-read" wx:if="{{settingData.agreement.enable}}">
+        <view id="id19" class="weda-ui weda-ui-to-wd">
+          <view class="weda-ui weda-checkbox wd-event-change">
+            <view class="weda-ui weda-formcells weui-cells weui-cells_checkbox weui-flex">
+              <view class="weui-flex__item">
+                <view class="weui-cell__bd weui-flex">
+                  <checkbox-group bind:change="onAgreementChange">
+                    <label role="checkbox" aria-disables="false" aria-checked="false" class="weui-cell weui-cell_active weui-check__label">
+                      <view class="weui-cell__hd">
+                        <checkbox aria-disables="false" value="haveRead" role="checkbox" aria-checked="false" class="weui-check"></checkbox>
+                        <i class="weui-icon-checked"></i>
+                      </view>
+                      <view class="weui-cell__bd">
+                        <view>我已阅读并同意</view>
+                      </view>
+                    </label>
+                  </checkbox-group>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <text class="weda-text weda-ui wd-event-tap" style="white-space: pre-line; margin:0px 5px;display:flex;align-items:center;color:rgb(68, 144, 238);text-align:center;white-space:pre-line;" wx:if="{{settingData.agreement.items[0].enable}}" data-index="0" bind:tap="showAgreement">《{{settingData.agreement.items[0].label}}》</text>
+        <text id="id14" style="white-space: pre-warp; display:flex;align-items:center;white-space:pre-line;" class="weda-text weda-ui" wx:if="{{settingData.agreement.items[0].enable && settingData.agreement.items[1].enable}}">和</text>
+        <text class="weda-text weda-ui wd-event-tap" id="id12" style="white-space: pre-line; margin:0px 5px;display:flex;align-items:center;color:rgb(68, 144, 238);white-space:pre-line;" data-index="1" wx:if="{{settingData.agreement.items[1].enable}}" bind:tap="showAgreement">《{{settingData.agreement.items[1].label}}》</text>
+      </view>
+    </view>
+    <gsd-h5-react-Modal id="id4" style="position: absolute;" isDefaultButton="{{false}}" visible="{{isShowAgreement}}" bind:close="showAgreement">
+      <scroll-view id="id6" style="height:500px;margin-top:20px;" class="weda-ui" scroll-y="true" slot="customContent">
+        <gsd-h5-react-RichTextView id="id5" style="height: 60%" value="{{agreementContent}}" />
+      </scroll-view>
+    </gsd-h5-react-Modal>
+  </view>
+  <wd-info type="{{initing? 'loading': 'auth'}}" wx:if="{{initing || error}}" message="{{loading?'加载配置中...':' '}}" error="{{error}}" />
+</page-meta>
+

@@ -1,0 +1,140 @@
+.weda-status_content {
+  width: 100%;
+  padding: 16px;
+  word-break: break-all;
+}
+.weda-status_content__content {
+  color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.white-bg {
+  background-color: #fff;
+}
+.grey-bg {
+  background-color: #f2f2f2;
+}
+
+.weda-status_content__content .weda-status_content__content__image {
+  width: 48px;
+  height: 48px;
+}
+
+.weda-status_content__content .title {
+  padding: 10px 0 5px 0;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+}
+
+.weda-status_content__content .code {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.weda-status_content__content .detail {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 7px;
+}
+
+.weda-status_content__content .arrow {
+  width: 6px;
+  height: 10px;
+}
+
+/* 底部弹窗 */
+.weda-status_content_error-picker {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.weda-status_content_mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out 0;
+  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.weda-status_content_picker-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.weda-status_content_picker-inner .title {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 10px 0 20px 0;
+}
+
+.weda-status_content_picker-inner .close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.weda-status_content_picker-inner .detail {
+  position: relative;
+  padding: 12px 15px;
+  display: block;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.weda-status_content_picker-inner .line {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 3px 0;
+  display: block;
+  word-wrap: break-word;
+}
+
+.weda-status_content_picker-inner .foot {
+  margin: 20px 10px 0 10px;
+}
+
+.weda-status_content_picker-inner .copy {
+  height: 44px;
+  background: var(--wd-color-brand, #0052d9);
+  border-radius: 3px;
+  color: #fff;
+  width: 100%;
+  line-height: 44px;
+  text-align: center;
+}
