@@ -3,7 +3,9 @@
     "weui": true
   },
   "pages": [
+    
     "pages/u81h26k2dho/index",
+    "pages/login/login",
     "pages/index/index",
     "pages/u_shang_chuan_zhao_pi/index",
     "pages/u_suo_zai_da_xue/index",

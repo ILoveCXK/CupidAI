@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+
+<image src="{{userInfo.avatarUrl}}" mode=""/>
+<view>{{userInfo.nickName}}</view>
+<button bind:tap="getUserProfile">授权</button>

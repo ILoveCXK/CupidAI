@@ -6,7 +6,6 @@ import { $page, $w } from '../../pages/u_shang_chuan_zhao_pi/api';
 * 具体可以 console.info 在编辑器Console面板查看更多信息
 * 如果需要 async-await，请在方法前 async
 */
-
 export default {
   onPageLoad(query) {
     //console.log('---------> LifeCycle onPageLoad', query)

@@ -4,8 +4,8 @@ import { concatClassList, px2rpx } from '../../common/style'
 import { app, $app } from '../../app/weapps-api'
 import { $3 as handlers } from '../../app/handlers'
 import lifecycle from '../../lowcode/u_tou_xiang_ni_cheng/lifecycle'
-import state from '../../lowcode/u_tou_xiang_ni_cheng/state'
-import computed from '../../lowcode/u_tou_xiang_ni_cheng/computed'
+const state = {}
+const computed = {}
 import { $page, $w } from './api'
 import { widgetProps } from './data'
 

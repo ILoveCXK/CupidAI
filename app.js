@@ -8,6 +8,11 @@ import {
 } from './datasources/index';
 
 App({
+  onLaunch(){
+    wx.cloud.init({
+      env:"env-8gg9g2zj0490613d"
+    })
+  },
   _query: {},
   globaldata: {
     _beforeCustomLaunchPromise: null,

@@ -9,7 +9,6 @@ import { $page, $w } from '../../../pages/u_yong_hu_zhu_ce/api';
  * 如果需要 async-await，请修改成 export default async function() {}
  * 帮助文档 https://cloud.tencent.com/document/product/1301/57912
  **/
-
 /**
  * @param {Object} event - 事件对象
  * @param {string} event.type - 事件名

@@ -34,7 +34,12 @@ const evtListeners = {"onbutton1$tap": [
       {
           key: 'w98fafjdsa0',
           sourceKey: 'u81h26k2dho:login',
-          handler: handlers.login,
+          // handler: handlers.login,
+          handler:function(){
+            wx.navigateTo({
+              url: '../index/index',
+            })
+          },
           args: {
   "params": [
     {}

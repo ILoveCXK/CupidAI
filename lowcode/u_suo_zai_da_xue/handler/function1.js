@@ -9,7 +9,6 @@ import { $page, $w } from '../../../pages/u_suo_zai_da_xue/api';
  * 如果需要 async-await，请修改成 export default async function() {}
  * 帮助文档 https://cloud.tencent.com/document/product/1301/57912
  **/
-
 /**
  * @param {Object} event - 事件对象
  * @param {string} event.type - 事件名
@@ -22,5 +21,4 @@ export default async function ({ event, data }) {
   console.log("1", $w.app.dataset.state.college_name)
   console.log("2", $w.page.dataset.state.college_possible)
   console.log("3", $w.page.dataset.state.college_possible_final)
-
 }
